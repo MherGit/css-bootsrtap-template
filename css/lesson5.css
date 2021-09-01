@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+
+.nav {
+    position: fixed;
+    z-index: 5;
+}
+
+header {
+    padding: 130px 0;
+    background: url(../images/bg-masthead.jpg) no-repeat center/cover;
+}
+
+header h1, header p, header button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header h1 {
+    font-size: 85px;
+    font-weight: 900;
+}
+
+header p {
+    font-size: 30px;
+    font-style: italic;
+    
+    font-weight: 900;
+}
+
+nav .title, nav a {
+    transition: color 0.5s ease;
+}
+
+nav .li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+	background: white;
+	
+}
+
+nav .li:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+
+header button {
+    width: 160px;
+    height: 50px;
+}
+
+nav .title:hover {
+    color: rgb(235, 229, 229) !important;
+}
+
+nav a:hover {
+    color: rgb(235, 229, 229) !important;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 50px;
+        font-weight: 900;
+    }
+    header p {
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 900;
+    }
+    
+}
+
+/*  */
+
+.white-div {
+    padding: 100px 0;
+}
+
+.white-div p, .white-div h2, .white-div button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.white-div h2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.white-div p {
+    font-size: 19px;
+}
+
+.white-div button {
+    width: 160px;
+    height: 50px;
+}
+
+/*  */
+
+.blue-div {
+    padding: 100px 0 84px;
+}
+
+.blue-div h1, .blue-div h3, .blue-div p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.blue-div>h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.blue-div>p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blue-div h3 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.blue-div .p {
+    color: rgba(256,256,256,0.7);
+} 
+
+.blue-div .icon {
+    width: 120px;
+    height: 120px;
+    font-size: 40px;
+}
+
+.blue-div ._4divs {
+    width: 85%;
+}
+
+article {
+    background: url(../images/bg-callout.jpg) no-repeat center/cover;
+    padding: 200px 0;
+}
+
+article>h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    width: 35%;
+}
+
+article button {
+    width: 160px;
+    height: 50px;
+}
+
+article span {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    article>h1 {
+        font-size: 43px;
+    }
+}
+
+main {
+    padding: 90px 0;
+}
+
+main p, main h1, main h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+main>p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main>h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+main .flow-div1, main .flow-div2, main .flow-div3, main .flow-div4 {
+    padding: 180px 0 60px 60px;
+    transition: 0.5s;
+}
+
+main ._divs4 {
+    width: 85%;
+}
+
+main .flow-div1 {
+    background: url(../images/portfolio-1.jpg) no-repeat center/cover;
+}
+
+main .flow-div2 {
+    background: url(../images/portfolio-2.jpg) no-repeat center/cover;
+}
+
+main .flow-div3 {
+    background: url(../images/portfolio-3.jpg) no-repeat center/cover;
+}
+
+main .flow-div4 {
+    background: url(../images/portfolio-4.jpg) no-repeat center/cover;
+}
+
+main ._divs4 p {
+    font-size: 18px;
+}
+
+main ._divs4>div {
+    position: relative;
+}
+
+main ._divs4>div:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+main ._divs4>div .opacity {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23,162,184, 0);
+    visibility: hidden;
+    transition: all 1s ease 0s,
+    visibility 2s linear 0s; 
+}
+
+main ._divs4>div:hover>.opacity {
+    visibility: visible;
+    background-color: rgba(23,162,184, 0.8);
+}
+
+/* */
+
+.blue-small {
+    padding: 100px 0;
+}
+
+.blue-small p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.blue-small button {
+    width: 160px;
+    height: 50px;
+    
+}
+
+.blue-small .buttons {
+    width: 40%;
+}
+
+/* Section */
+
+section iframe {
+    height: 100vh;
+}
+
+/* Footer */
+
+footer {
+    padding: 60px 0 30px;
+}
+
+footer .round {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+footer .round:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+footer i {
+    font-size: 29px;
+}
+
+footer .icons {
+    width: 30%;
+}
+
+@media (min-width: 768px) {
+    footer .round {
+        width: 65px;
+        height: 65px;
+    }
+    footer i {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blue-small p {
+        font-size: 30px;
+    }
+}
+
+footer p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
